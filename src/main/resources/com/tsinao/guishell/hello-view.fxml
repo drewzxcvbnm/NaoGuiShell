@@ -36,7 +36,7 @@
                 <Label fx:id="foundPptx" alignment="CENTER" prefHeight="28.0" prefWidth="434.0" GridPane.columnIndex="1"
                        GridPane.rowIndex="3"/>
 
-                <Button fx:id="runNaopptx" disable="true" mnemonicParsing="false" onAction="#runNaopptx"
+                <Button fx:id="runNaopptx" disable="true" mnemonicParsing="false" onAction="#runNaoPptxCommand"
                         prefHeight="61.0" prefWidth="183.0" text="Run naopptx" GridPane.rowIndex="4"/>
                 <CheckBox fx:id="noNet" mnemonicParsing="false" prefHeight="32.0" prefWidth="286.0" selected="true"
                           text="No internet pls" GridPane.columnIndex="1" GridPane.halignment="CENTER"
