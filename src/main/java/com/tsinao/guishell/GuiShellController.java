@@ -57,6 +57,7 @@ public class GuiShellController {
         String command = String.format("%s --ip %s --pr %s %s", foundNaopptx.getText(), naoIp.getText(),
                 foundPptx.getText(), noNet.isSelected() ? "--no-inet" : "");
         try {
+
             Runtime.getRuntime().exec(command);
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

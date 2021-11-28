@@ -6,6 +6,7 @@ module com.tsinao.guishell {
     requires com.dlsc.formsfx;
     requires validatorfx;
     requires org.kordamp.bootstrapfx.core;
+    requires static lombok;
 
     opens com.tsinao.guishell to javafx.fxml;
     exports com.tsinao.guishell;
