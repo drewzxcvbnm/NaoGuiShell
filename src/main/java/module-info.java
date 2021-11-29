@@ -4,7 +4,6 @@ module com.tsinao.guishell {
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
-    requires validatorfx;
     requires org.kordamp.bootstrapfx.core;
     requires static lombok;
 

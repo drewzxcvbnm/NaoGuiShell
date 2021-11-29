@@ -15,7 +15,7 @@
     <RowConstraints maxHeight="338.0" minHeight="10.0" prefHeight="273.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="142.0" text="Kill Process">
+      <Button fx:id="killProcess" mnemonicParsing="false" prefHeight="37.0" prefWidth="142.0" text="Kill Process">
          <GridPane.margin>
             <Insets left="40.0" />
          </GridPane.margin>

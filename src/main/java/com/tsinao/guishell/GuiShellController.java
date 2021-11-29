@@ -3,6 +3,7 @@ package com.tsinao.guishell;
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -55,10 +56,11 @@ public class GuiShellController {
     @FXML
     public void runNaoPptxCommand() {
         String command = String.format("%s --ip %s --pr %s %s", foundNaopptx.getText(), naoIp.getText(),
-                foundPptx.getText(), noNet.isSelected() ? "--no-inet" : "");
+                foundPptx.getText(), noNet.isSelected() ? " --no-inet" : "");
         try {
-
-            Runtime.getRuntime().exec(command);
+            Process process = Runtime.getRuntime().exec(command.split(" "));
+            Stage processView = new ProcessViewCreator(process).getProcessView();
+            processView.show();
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Nao Gui Shell");
